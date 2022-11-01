@@ -129,6 +129,38 @@ class MollieApiWrapper
     }
 
     /**
+     * @return \Mollie\Api\Endpoints\PaymentRefundEndpoint
+     */
+    public function paymentRefunds()
+    {
+        return $this->client->paymentRefunds;
+    }
+
+    /**
+     * @return \Mollie\Api\Endpoints\PaymentRouteEndpoint
+     */
+    public function paymentRoutes()
+    {
+        return $this->client->paymentRoutes;
+    }
+
+    /**
+     * @return \Mollie\Api\Endpoints\PaymentCaptureEndpoint
+     */
+    public function paymentCaptures()
+    {
+        return $this->client->paymentCaptures;
+    }
+
+    /**
+     * @return \Mollie\Api\Endpoints\PaymentLinkEndpoint
+     */
+    public function paymentLinks()
+    {
+        return $this->client->paymentLinks;
+    }
+
+    /**
      * @return \Mollie\Api\Endpoints\MethodEndpoint
      */
     public function methods()
@@ -150,6 +182,14 @@ class MollieApiWrapper
     public function settlements()
     {
         return $this->client->settlements;
+    }
+
+    /**
+     * @return \Mollie\Api\Endpoints\SettlementPaymentEndpoint
+     */
+    public function settlementPayments()
+    {
+        return $this->client->settlementPayments;
     }
 
     /**
@@ -209,6 +249,14 @@ class MollieApiWrapper
     }
 
     /**
+     * @return \Mollie\Api\Endpoints\ShipmentEndpoint
+     */
+    public function shipments()
+    {
+        return $this->client->shipments;
+    }
+
+    /**
      * @return \Mollie\Api\Endpoints\RefundEndpoint
      */
     public function refunds()
@@ -225,11 +273,43 @@ class MollieApiWrapper
     }
 
     /**
+     * @return \Mollie\Api\Endpoints\PaymentChargebackEndpoint
+     */
+    public function paymentChargebacks()
+    {
+        return $this->client->paymentChargebacks;
+    }
+
+    /**
      * @return \Mollie\Api\Endpoints\OrderEndpoint
      */
     public function orders()
     {
         return $this->client->orders;
+    }
+
+    /**
+     * @return \Mollie\Api\Endpoints\OrderLineEndpoint
+     */
+    public function orderLines()
+    {
+        return $this->client->orderLines;
+    }
+
+    /**
+     * @return \Mollie\Api\Endpoints\OrderPaymentEndpoint
+     */
+    public function orderPayments()
+    {
+        return $this->client->orderPayments;
+    }
+
+    /**
+     * @return \Mollie\Api\Endpoints\OrderRefundEndpoint
+     */
+    public function orderRefunds()
+    {
+        return $this->client->orderRefunds;
     }
 
     /**
